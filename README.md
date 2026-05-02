@@ -114,6 +114,14 @@ cd oai-harvester
 poetry install
 ```
 
+## Responsible Use
+
+> **Please harvest responsibly.** OAI-PMH endpoints are provided as a service by institutions and research organisations, often running on limited infrastructure. Do not abuse crawl rates or issue requests in rapid succession — this can degrade the service for other users or trigger temporary bans.
+>
+> The default crawl delay is **10 seconds** between requests, which is intentionally conservative. Do not reduce this without good reason, and consider increasing it for smaller repositories.
+>
+> If you need to harvest a large repository, it is strongly advisable to **break the harvest into smaller sets** — for example, by community or collection — rather than attempting a full harvest in a single run. Use `--list-sets` to explore available sets, then use `--set` to target one at a time. This reduces load on the server and allows you to resume from a specific point if something goes wrong.
+
 ## Usage
 
 ### Interactive mode
